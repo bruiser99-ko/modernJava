@@ -1,4 +1,4 @@
-package modernJava.chapter3;
+package modernJava.chapter3.ex01;
 
 public class Ex01 {
 	public static void process(Runnable r) {

@@ -1,4 +1,4 @@
-package modernJava.chapter3;
+package modernJava.chapter3.ex02;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
