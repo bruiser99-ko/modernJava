@@ -1,11 +1,11 @@
-package modernJava.chapter6.Ex03;
+package modernJava.chapter6.ex03;
 
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
 import java.util.stream.Collectors;
 
-import modernJava.chapter6.Ex03.Dish.Type;
+import modernJava.chapter6.ex03.Dish.Type;
 
 public class Ex03 {
 	public static void main(String[] args) {

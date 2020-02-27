@@ -1,4 +1,4 @@
-package modernJava.chapter6.Ex03;
+package modernJava.chapter6.ex03;
 
 import java.util.Arrays;
 import java.util.HashMap;
