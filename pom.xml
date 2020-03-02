@@ -21,6 +21,38 @@
           <release>11</release>
         </configuration>
       </plugin>
+      <plugin>
+      	<groupId>org.apache.maven.plugins</groupId>
+      	<artifactId>maven-shade-plugin</artifactId>
+      	<executions>
+      		<execution>
+      			<phase>package</phase>
+      			<goals>
+      				<goal>shade</goal>
+      			</goals>
+      			<configuration>
+      				<finalName>benchmarks</finalName>
+      				<transformers>
+      					<transformer implementation="org.apache.maven.shade.resource.ManifestResourceTransformer">
+      						<mainClass>org.openjdk.jmh.Main</mainClass>
+      					</transformer>
+      				</transformers>
+      			</configuration>
+      		</execution>
+      	</executions>
+      </plugin>
     </plugins>
   </build>
+  <dependencies>
+  	<dependency>
+  		<groupId>org.openjdk.jmh</groupId>
+  		<artifactId>jmh-core</artifactId>
+  		<version>1.17.4</version>
+  	</dependency>
+  	<dependency>
+  		<groupId>org.openjdk.jmh</groupId>
+  		<artifactId>jmh-generator-annprocess</artifactId>
+  		<version>1.17.4</version>
+  	</dependency>
+  </dependencies>
 </project>
