@@ -12,6 +12,11 @@ public class Ex04 {
 		System.out.println(lowerCaseValidator.validate("A"));
 		System.out.println(lowerCaseValidator.validate("a"));
 		
+		/* 람다식 */
+		Validator numericValidator2 = me.new Validator(s->s.matches("\\d+"));
+		Validator lowerCaseValidator2 = me.new Validator(s->s.matches("[a-z]+"));
+		System.out.println(numericValidator2.validate("1"));
+		System.out.println(lowerCaseValidator2.validate("a"));
 	}
 	
 	/* 전략 - 한 유형의 알고리즘을 보유한 상태에서 런타임에 적절한 알고리즘을 선택하는 기법 */
