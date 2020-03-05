@@ -16,7 +16,7 @@ public class Ex08 {
 		Product loan = loanSupplier.get();
 		
 	}
-	4
+	
 	final static Map<String, Supplier<Product>> map = new HashMap<String, Supplier<Product>>();
 	static {
 		map.put("loan", Loan::new);
